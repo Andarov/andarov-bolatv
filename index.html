@@ -10,12 +10,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body>
+<body class="font-signika">
 
-    <h3 class="bg-red-500 p-4">salom</h3>
-
+    
+<!-- Header -->
+<header class="bg-gradient-to-r from-[#FAEDDD] to-[#DBF0FB] py-8">
+    <!-- container -->
+    <div class="w-full max-w-base px-5 mx-auto">
+        <div class="flex justify-between items-center md:mb-8">
+            <!-- logo -->
+            <a class="font-serif font-bold text-3xl" href="index.html">Bola Tv</a>
+            <!-- subscribe -->
+            <a class="hidden md:inline-block bg-blue-200 px-5 py-2 rounded transition-all duration-300 hover:bg-green-300" href="#">
+                <i class="fa-brands fa-telegram mr-2"></i>
+                <span>Obuna bo'lish</span>
+            </a>
+            <!-- menu icon -->
+            <button class="inline-block text-xl md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- nav -->
+        <nav class="hidden md:flex justify-center items-center px-5 py-3 bg-white rounded-lg shadow-md">
+            <ul class="flex flex-wrap gap-x-9">
+                <li>
+                    <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="#">Bosh sahifa</a>
+                </li>
+                <li>
+                    <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="#">Xalq ertaklari</a>
+                </li>
+                <li>
+                    <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="#">Multfilm</a>
+                </li>
+                <li>
+                    <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="#">Qo'shiqlar</a>
+                </li>
+                <li>
+                    <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="#">Qiziqarli matematika</a>
+                </li>
+                <li>
+                    <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="#">Ingliz tili</a>
+                </li>
+                <li>
+                    <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="#">Badantarbiya</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     
 </body>

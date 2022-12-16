@@ -8,8 +8,9 @@ module.exports = {
       },
       colors:{
         br:{
-          'red': "#a30015;",
-          'blue': "#319437",
+          'red': "#a30015",
+          'blue': "#3384FB",
+          'green': "#319437",
           'violet': '#5b2269',
           'darkBlue': '#004686'
         }
