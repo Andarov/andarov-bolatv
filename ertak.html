@@ -39,10 +39,10 @@
             <nav class="hidden md:flex justify-center items-center px-5 py-3 bg-white rounded-lg shadow-md">
                 <ul class="flex flex-wrap gap-x-9">
                     <li>
-                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="#">Bosh sahifa</a>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="index.html">Bosh sahifa</a>
                     </li>
                     <li>
-                        <a class="text-xl text-green-600 font-medium" href="#">Xalq ertaklari</a>
+                        <a class="text-xl text-green-600 font-medium" href="ertak.html">Ertaklar</a>
                     </li>
                     <li>
                         <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="#">Multfilm</a>
@@ -68,13 +68,15 @@
     <div class="mb-5">
         <div class="relative w-full">
             <img class="w-full h-36 md:h-56" src="./img/ertak-page.png" alt="Ertak sahifasi">
-            <h1 class="absolute top-10 left-1/2 text-xl text-br-red font-bold sm:text-2xl sm:top-14 md:text-4xl md:top-16 lg:text-5xl">Xalq ertaklari</h1>
+            <h1 class="absolute top-10 left-1/2 text-xl text-br-red font-bold sm:text-2xl sm:top-14 md:text-4xl md:top-16 lg:text-5xl">Ertaklar</h1>
         </div>
     </div>
     
+    <!-- Main -->
     <main class="bg-gradient-to-br from-white to-green-100 py-10">
 
-        <section class="w-full max-w-base mx-auto px-5">
+        <!-- Search and sort -->
+        <section class="w-full max-w-base mx-auto px-5 mb-8 md:mb-16">
             <div class="flex items-center justify-between">
                 <input class="w-3/5 text-base bg-transparent border-b border-br-darkBlue focus:outline-none mr-10 md:text-lg md:w-1/2" type="text" placeholder="Qidiruv">
                 <button class="inline-flex bg-blue-200 px-5 py-1 rounded transition-all duration-300 hover:bg-green-300 md:py-2" type="button">
@@ -82,13 +84,23 @@
                     <span class="text-br-red">A | B</span></button>
             </div>
         </section>
+
+        <!-- Videos -->
+        <section class="w-full max-w-base mx-auto px-5">   
+            
+            <div id="videos" class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+
+            </div>  
+
+        </section>
         
     </main>
     
         
     <footer class="shadow-2xl py-8">
-        <p class="text-xl font-bold text-center text-br-green md:text-2xl">Copyright ©2022 by Andarov</p>
+        <p class="text-lg font-bold text-center text-br-green sm:text-xl md:text-2xl">Bola Tv ©2022 year | developer Andarov Bektur</p>
     </footer>
     
+    <script type="module" src="app.js"></script>
 </body>
 </html>
