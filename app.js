@@ -1,6 +1,9 @@
 import ertaklar from "./ertak.js";
 import songs from "./songs.js";
 import badantarbiya from "./badantarbiya.js";
+import mathVideos from "./math.js";
+
+
 const elVideos = document.querySelector('#videos')
 
 
