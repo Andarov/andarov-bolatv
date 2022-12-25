@@ -1,4 +1,5 @@
 import ertaklar from "./ertak.js";
+import badantarbiya from "./badantarbiya.js";
 const elVideos = document.querySelector('#videos')
 
 const displayVideos = function(api){
