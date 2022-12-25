@@ -1,6 +1,8 @@
 import ertaklar from "./ertak.js";
+import songs from "./songs.js";
 import badantarbiya from "./badantarbiya.js";
 const elVideos = document.querySelector('#videos')
+
 
 const displayVideos = function(api){
     api.forEach(function (item) {
