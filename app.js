@@ -129,7 +129,7 @@ function parseMediaURL(media) {
     let url = media.src;
     let match = url.match(regexp);
     
-    return match[1];
+    return match? match[1] : match;
 }
 
 function createIframe(id) {
