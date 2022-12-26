@@ -4,7 +4,7 @@ import cartoon from "./cartoon.js";
 import songs from "./songs.js";
 import badantarbiya from "./badantarbiya.js";
 import mathVideos from "./math.js";
-import english from "./english.js";
+import englishVid from "./english.js";
  
 // Display videos function
 const displayVideos = function(section, api){
@@ -54,6 +54,15 @@ if(pomidor, avto, panda, qunduz, mittivoylar, dogs, masha, multic){
     displayVideos(dogs, cartoon[5])
     displayVideos(masha, cartoon[6])
     displayVideos(multic, cartoon[7])
+}
+
+// Display english videos
+const english = document.querySelector('#english')
+const lucking = document.querySelector('#lucking')
+
+if(english, lucking){
+    displayVideos(english, englishVid[0])
+    displayVideos(lucking, englishVid[1])
 }
 
 // Display badantarbiya videos
