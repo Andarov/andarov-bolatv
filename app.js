@@ -56,6 +56,15 @@ if(pomidor, avto, panda, qunduz, mittivoylar, dogs, masha, multic){
     displayVideos(multic, cartoon[7])
 }
 
+// Display songs videos
+const uzbSong = document.querySelector('#uzb-song')
+const engSong = document.querySelector('#eng-song')
+
+if(uzbSong, engSong){
+    displayVideos(uzbSong, songs[0])
+    displayVideos(engSong, songs[1])
+}
+
 // Display math videos
 const starterMath = document.querySelector('#starter-math')
 const mental = document.querySelector('#mental')
