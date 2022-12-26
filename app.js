@@ -13,7 +13,7 @@ const displayVideos = function(section, api){
         
         section.innerHTML += `
         <div id="video" class="relative group max-w-md">
-        <a class="w-full inline-flex flex-col justify-center items-center id="video-link" href="${url}">
+        <a class="w-full inline-flex flex-col justify-center items-center" id="video-link" href="${url}">
         <picture class="w-full min-h-56 bg-slate-200">
         <source srcset="${thumbnail}" type="image/webp">
         <img class="w-full" id="video-img" src="${thumbnail}" alt="${title}">
@@ -94,19 +94,7 @@ if(exersices, bardam){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Iframe
 function findVideos() {
     let videos = document.querySelectorAll('#video');
     
@@ -116,7 +104,9 @@ function findVideos() {
 }
 
 function setupVideo(video) {
+    console.log(video);
     let link = video.querySelector('#video-link');
+    // console.log(link);
     let media = video.querySelector('#video-img');
     let button = video.querySelector('#video-btn');
     
@@ -159,7 +149,6 @@ function generateURL(id) {
     
     return 'https://www.youtube.com/embed/' + id + query;
 }
-
 findVideos();
 
 // Nomi bilan qidiruv
