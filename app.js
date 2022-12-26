@@ -5,16 +5,12 @@ import badantarbiya from "./badantarbiya.js";
 import mathVideos from "./math.js";
 import english from "./english.js";
 
-
-const elVideos = document.querySelector('#videos')
-
-
-const displayVideos = function(api){
+const displayVideos = function(section, api){
     api.forEach(function (item) {
         const { title, url, thumbnail } = item;
         
-        elVideos.innerHTML += `
-        <div id="video" class="relative group">
+        section.innerHTML += `
+        <div id="video" class="relative group max-w-md max-h-56 bg-slate-200">
         <a id="video-link" href="${url}">
         <picture>
         <source srcset="${thumbnail}" type="image/webp">
@@ -30,7 +26,11 @@ const displayVideos = function(api){
     });
 }
 
-displayVideos(ertaklar)
+const uzbTale = document.querySelector('#uzb-tale');
+const worldTale = document.querySelector('#world-tale');
+
+displayVideos(uzbTale, ertaklar[0])
+displayVideos(worldTale, ertaklar[1])
 
 function findVideos() {
     let videos = document.querySelectorAll('#video');
