@@ -286,7 +286,7 @@ const cartoon = [
         {
             title: "3-qism",
             url: "https://www.youtube.com/watch?v=YdxthkTuk34&t=442s",
-            thumbnail: "https://www.youtube.com/watch?v=VC8siB9yIY0"
+            thumbnail: "https://i.ytimg.com/vi/5Y-NzcLuRIQ/maxresdefault.jpg"
         },
         {
             title: "4-qism",
@@ -301,12 +301,12 @@ const cartoon = [
         {
             title: "6-qism",
             url: "https://www.youtube.com/watch?v=ZEkVJM9p1Vo&t=1s",
-            thumbnail: "https://www.youtube.com/watch?v=VC8siB9yIY0"
+            thumbnail: "https://i.ytimg.com/vi/5Y-NzcLuRIQ/maxresdefault.jpg"
         },
         {
             title: "7-qism",
             url: "https://www.youtube.com/watch?v=XCD2taX-7Tg",
-            thumbnail: "https://www.youtube.com/watch?v=VC8siB9yIY0"
+            thumbnail: "https://i.ytimg.com/vi/5Y-NzcLuRIQ/maxresdefault.jpg"
         },
         {
             title: "8-qism",
@@ -321,7 +321,7 @@ const cartoon = [
         {
             title: "10-qism",
             url: "https://www.youtube.com/watch?v=8SDxybYzqW8",
-            thumbnail: "https://www.youtube.com/watch?v=VC8siB9yIY0"
+            thumbnail: "https://i.ytimg.com/vi/5Y-NzcLuRIQ/maxresdefault.jpg"
         },
         {
             title: "11-qism",

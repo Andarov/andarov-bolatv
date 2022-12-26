@@ -4,20 +4,20 @@ import songs from "./songs.js";
 import badantarbiya from "./badantarbiya.js";
 import mathVideos from "./math.js";
 import english from "./english.js";
-
+ 
 const displayVideos = function(section, api){
     api.forEach(function (item) {
         const { title, url, thumbnail } = item;
         
         section.innerHTML += `
-        <div id="video" class="relative group max-w-md max-h-56 bg-slate-200">
+        <div id="video" class="relative group max-w-md max-h-36 bg-slate-100">
         <a id="video-link" href="${url}">
         <picture>
         <source srcset="${thumbnail}" type="image/webp">
         <img id="video-img" src="${thumbnail}" alt="${title}">
         </picture>
         </a>
-        <h3 id="video-title" class="text-center text-xl text-br-darkBlue font-semibold mt-2">${title}</h3>
+        <h3 id="video-title" class="bg-transparent text-center text-xl text-br-darkBlue font-semibold mt-2">${title}</h3>
         <button id="video-btn" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl">
         <i class="text-red-600 fa-brands fa-youtube group-hover:text-red-400 transition-all duration-500"></i>
         </button>
@@ -28,9 +28,42 @@ const displayVideos = function(section, api){
 
 const uzbTale = document.querySelector('#uzb-tale');
 const worldTale = document.querySelector('#world-tale');
+if(uzbTale, worldTale){
+    displayVideos(uzbTale, ertaklar[0])
+    displayVideos(worldTale, ertaklar[1])
+}
 
-displayVideos(uzbTale, ertaklar[0])
-displayVideos(worldTale, ertaklar[1])
+const pomidor = document.querySelector('#pomidor');
+const avto = document.querySelector('#avto');
+const panda = document.querySelector('#panda');
+const qunduz = document.querySelector('#qunduz');
+const mittivoylar = document.querySelector('#mittivoylar');
+const dogs = document.querySelector('#dogs');
+const masha = document.querySelector('#masha');
+const multic = document.querySelector('#multic');
+if(pomidor, avto, panda, qunduz, mittivoylar, dogs, masha, multic){
+    displayVideos(pomidor, cartoon[0])
+    displayVideos(avto, cartoon[1])
+    displayVideos(panda, cartoon[2])
+    displayVideos(qunduz, cartoon[3])
+    displayVideos(mittivoylar, cartoon[4])
+    displayVideos(dogs, cartoon[5])
+    displayVideos(masha, cartoon[6])
+    displayVideos(multic, cartoon[7])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function findVideos() {
     let videos = document.querySelectorAll('#video');
