@@ -31,7 +31,7 @@
                     <span>Obuna bo'lish</span>
                 </a>
                 <!-- menu icon -->
-                <button class="inline-block text-xl md:hidden">
+                <button id="menu" class="inline-block text-xl md:hidden">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
@@ -62,6 +62,42 @@
                 </ul>
             </nav>
         </div>
+        
+        <!-- open-menu -->
+        <div id="open-menu" class="transition-all duration-500 -translate-x-full w-full fixed top-0 h-full z-50">
+            <div id="overl" class="bg-[#929292] fixed top-0 h-full w-full"></div>
+            <div class="flex flex-col max-w-[300px] h-full overflow-auto bg-white pt-5 px-6 pb-14 fixed">
+                <!-- logo -->
+                <div class="pb-2 border-b">
+                    <a class="font-serif font-bold text-2xl sm:text-3xl text-br-green" href="index.html">Bola Tv</a>
+                </div>
+                <!-- navbar -->
+                <ul class="flex flex-col py-5 w-full h-auto border-b divide-y divide-dashed space-y-2">
+                    <li>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="index.html">Bosh sahifa</a>
+                    </li>
+                    <li>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="ertak.html">Ertaklar</a>
+                    </li>
+                    <li>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="cartoon.html">Multfilm</a>
+                    </li>
+                    <li>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="songs.html">Qo'shiqlar</a>
+                    </li>
+                    <li>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="math.html">Qiziqarli matematika</a>
+                    </li>
+                    <li>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="english.html">Ingliz tili</a>
+                    </li>
+                    <li>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="badantarbiya.html">Badantarbiya</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
     </header> <main>
         <!-- Hero -->
         <div class="mb-5">
@@ -93,13 +129,13 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Multfilm -->
         <section class="py-7 sm:py-10">
             <!-- container -->
             <div class="w-full max-w-base mx-auto px-5">
                 <div class="flex flex-col-reverse md:flex-row justify-between items-center">
-
+                    
                     <!-- Kontent -->
                     <div class="w-full flex flex-col justify-center items-center md:mr-10 md:w-1/2">
                         <h2 class="font-bold text-br-violet text-3xl mb-5 text-center">Multfilmlar</h2>
@@ -117,7 +153,7 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Qo'shiqlar -->
         <section class="py-7 sm:py-10">
             <!-- container -->
@@ -140,13 +176,13 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Qiziqarli matematika -->
         <section class="py-7 sm:py-10">
             <!-- container -->
             <div class="w-full max-w-base mx-auto px-5">
                 <div class="flex flex-col-reverse md:flex-row justify-between items-center">
-
+                    
                     <!-- Kontent -->
                     <div class="w-full flex flex-col justify-center items-center md:mr-10 md:w-1/2">
                         <h2 class="font-bold text-br-violet text-3xl mb-5 text-center">Qiziqarli matematika</h2>
@@ -164,7 +200,7 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Ingliz tili -->
         <section class="py-7 sm:py-10">
             <!-- container -->
@@ -187,13 +223,13 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Badantarbiya -->
         <section class="py-7 sm:py-10">
             <!-- container -->
             <div class="w-full max-w-base mx-auto px-5">
                 <div class="flex flex-col-reverse md:flex-row justify-between items-center">
-
+                    
                     <!-- Kontent -->
                     <div class="w-full flex flex-col justify-center items-center md:mr-10 md:w-1/2">
                         <h2 class="font-bold text-br-violet text-3xl mb-5 text-center">Badantarbiya</h2>
@@ -208,12 +244,12 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- FAQ -->
         <section class="py-7 sm:py-10 bg-blue-100/30">
             <h2 class="text-2xl text-br-red font-bold text-center mb-10 sm:text-3xl md:mb-16 md:text-5xl">Nima uchun aynan biz?</h2>
             <hr>
-
+            
             <ul class="grid w-full gap-y-5 gap-x-10 max-w-6xl px-5 mx-auto py-5 md:grid-cols-2 md:gap-y-10 md:gap-x-20">
                 <!-- 1 -->
                 <li class="w-full flex justify-center items-center md:justify-start">
@@ -243,6 +279,9 @@
     <footer class="shadow-2xl py-8">
         <p class="text-lg font-bold text-center text-br-green sm:text-xl md:text-2xl">Bola Tv ©2022 year | <span class="hidden md:inline-block">developer</span> Andarov</p>
     </footer>
+    
+    
+    <script type="module" src="app.js"></script>
     
 </body>
 </html>

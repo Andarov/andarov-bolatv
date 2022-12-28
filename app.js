@@ -196,3 +196,24 @@ const searchName = function() {
     });
 }
 searchName()
+
+
+const elMenu = document.getElementById('menu');
+const elOpenMenu = document.getElementById('open-menu');
+const elOverl = document.getElementById('overl');
+elMenu.addEventListener('click', function() {
+    console.log('salom');
+    elOpenMenu.classList.remove('-translate-x-full')
+    document.body.classList.add('overflow-hidden')
+})
+
+elOverl.addEventListener('click', function() {
+    elOpenMenu.classList.add('-translate-x-full')
+    document.body.classList.remove('overflow-hidden')
+})
+
+
+
+
+
+
