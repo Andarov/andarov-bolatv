@@ -103,26 +103,45 @@ function findVideos() {
     }
 }
 
+const modalWrapper = document.querySelector('#modal-wrapper')
+const modal = document.querySelector('#modal')
+const exitBtn = document.querySelector('#exit-btn')
+
 function setupVideo(video) {
-    console.log(video);
     let link = video.querySelector('#video-link');
-    // console.log(link);
     let media = video.querySelector('#video-img');
     let button = video.querySelector('#video-btn');
     
     let id = parseMediaURL(media);
-    
+    let iframe
     video.addEventListener('click', () => {
-        let iframe = createIframe(id);
+        modalWrapper.classList.remove('hidden')
+        modal.classList.remove('hidden')
+
+        iframe = createIframe(id);
         
-        link.remove();
-        button.remove();
-        video.prepend(iframe);
+        modal.prepend(iframe);
+        console.log(modal);
     });
     
     link.removeAttribute('href');
     video.classList.add('video--enabled');
+
+    const addHidden = function(){
+        modalWrapper.classList.add('hidden')
+        modal.classList.add('hidden')
+        iframe.remove()
+    }
+
+    exitBtn.addEventListener('click', addHidden)
+    modalWrapper.addEventListener('click', addHidden)
+    document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape'){
+            addHidden()
+        }
+    })
 }
+
 
 function parseMediaURL(media) {
     let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
@@ -139,7 +158,7 @@ function createIframe(id) {
     iframe.setAttribute('allow', 'autoplay');
     iframe.setAttribute('src', generateURL(id));
     iframe.classList.add('w-full')
-    iframe.style.height = '222px'
+    iframe.classList.add('h-full')
     
     return iframe;
 }

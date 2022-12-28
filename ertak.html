@@ -110,6 +110,17 @@
         <footer class="shadow-2xl py-8">
             <p class="text-lg font-bold text-center text-br-green sm:text-xl md:text-2xl">Bola Tv ©2022 year | <span class="hidden md:inline-block">developer</span> Andarov</p>
         </footer>
+
+        <!-- Modal -->
+        <div id="modal-wrapper" class="hidden bg-black/50 w-screen h-screen fixed top-0 left-0 z-40">
+            
+            <div id="modal" class="hidden w-2/3 h-96 bg-white rounded-lg z-20 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:max-w-3xl">
+                <button id="exit-btn" class="absolute -top-10 right-1 z-50 cursor-pointer">
+                    <i class="text-4xl text-white fa-solid fa-xmark hover:text-red-400"></i>
+                </button>
+            </div>
+
+        </div>
         
         <script type="module" src="app.js"></script>
     </body>
