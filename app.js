@@ -14,9 +14,9 @@ const displayVideos = function(section, api){
         section.innerHTML += `
         <div id="video" class="relative group max-w-md">
         <a class="w-full inline-flex flex-col justify-center items-center" id="video-link" href="${url}">
-        <picture class="w-full min-h-56 bg-slate-200">
+        <picture class="w-full bg-slate-200">
         <source srcset="${thumbnail}" type="image/webp">
-        <img class="w-full" id="video-img" src="${thumbnail}" alt="${title}">
+        <img class="w-full" id="video-img" src="${thumbnail}" alt="${title}" width="395" height="224">
         </picture>
         </a>
         <h3 id="video-title" class="bg-transparent text-center text-xl text-br-darkBlue font-semibold mt-2">${title}</h3>
