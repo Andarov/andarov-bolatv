@@ -5,11 +5,11 @@ import songs from "./songs.js";
 import badantarbiya from "./badantarbiya.js";
 import mathVideos from "./math.js";
 import englishVid from "./english.js";
- 
+
 // Display videos function
 const displayVideos = function(section, api){
     api.forEach(function (item) {
-        const { title, url, thumbnail } = item;
+        const { title, url, thumbnail, lang} = item;
         
         section.innerHTML += `
         <div id="video" class="relative group max-w-md">
@@ -23,9 +23,11 @@ const displayVideos = function(section, api){
         <button id="video-btn" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl">
         <i class="text-red-600 fa-brands fa-youtube group-hover:text-red-400 transition-all duration-500"></i>
         </button>
+        <span class="hidden" id="video-lang">${lang}</span>
         </div>
         `;
     });
+    
 }
 
 // Display ertak videos
@@ -93,10 +95,10 @@ if(exersices, bardam){
     displayVideos(bardam, badantarbiya[1])
 }
 
-
+let videos;
 // Iframe
 function findVideos() {
-    let videos = document.querySelectorAll('#video');
+    videos = document.querySelectorAll('#video');
     
     for (let i = 0; i < videos.length; i++) {
         setupVideo(videos[i]);
@@ -117,7 +119,7 @@ function setupVideo(video) {
     video.addEventListener('click', () => {
         modalWrapper.classList.remove('hidden')
         modal.classList.remove('hidden')
-
+        
         iframe = createIframe(id);
         
         modal.prepend(iframe);
@@ -126,13 +128,13 @@ function setupVideo(video) {
     
     link.removeAttribute('href');
     video.classList.add('video--enabled');
-
+    
     const addHidden = function(){
         modalWrapper.classList.add('hidden')
         modal.classList.add('hidden')
         iframe.remove()
     }
-
+    
     exitBtn.addEventListener('click', addHidden)
     modalWrapper.addEventListener('click', addHidden)
     document.addEventListener('keydown', function(e){
@@ -174,8 +176,6 @@ findVideos();
 const elForm = document.querySelector('#form');
 // Funksiya 
 const searchName = function() {
-    // Hamma videono olish
-    let videos = document.querySelectorAll('#video');
     // Video nomini olish
     videos.forEach(function(video){
         const videoTitle = video.querySelectorAll('#video-title')
@@ -184,7 +184,6 @@ const searchName = function() {
         elForm["name-input"].addEventListener("input", function () {
             const inputNameValue = form["name-input"].value.toLowerCase();
             videoTitle.forEach(function (title) {
-                console.log(title);
                 if (title.textContent.toLowerCase().includes(inputNameValue)) {
                     title.parentElement.classList.remove("hidden");
                 } else {
@@ -212,7 +211,22 @@ elOverl.addEventListener('click', function() {
     document.body.classList.remove('overflow-hidden')
 })
 
+const elSelect = document.querySelector('#select')
 
+elSelect.addEventListener('change', function(){
+    videos.forEach(function(video){
+        const videoLang = video.querySelectorAll('#video-lang')
+        
+        videoLang.forEach(function (lang) {
+            if (lang.textContent.includes(elSelect.value)) {
+                lang.parentElement.classList.remove("hidden");
+            } else {
+                lang.parentElement.classList.add("hidden");
+            }
+        });
+    });
+    
+});
 
 
 
