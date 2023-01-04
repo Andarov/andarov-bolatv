@@ -49,45 +49,6 @@ const mathVideos = [
             thumbnail: "https://i.ytimg.com/vi/sykdxSTyfn8/maxresdefault.jpg",
             lang: 'uz'
         },
-        {
-            title: "Quvnoq garajcha",
-            url: "https://www.youtube.com/watch?v=MAySmMLZuQg",
-            thumbnail: "https://i.ytimg.com/vi/dZ0eiu7ovRg/maxresdefault.jpg",
-            lang: 'uz'
-        },
-    ],
-    // Mental
-    [
-        {
-            title: "Mental arifmetika 1-qism",
-            url: "https://www.youtube.com/watch?v=fGP4q_4kZto",
-            thumbnail: "https://i.ytimg.com/vi/fGJONB8-l0o/maxresdefault.jpg",
-            lang: 'uz'
-        },
-        {
-            title: "Mental arifmetika 2-qism",
-            url: "https://www.youtube.com/watch?v=XXSxNY_taEc",
-            thumbnail: "https://i.ytimg.com/vi/fGJONB8-l0o/maxresdefault.jpg",
-            lang: 'uz'
-        },
-        {
-            title: "Mental arifmetika 3-qism",
-            url: "https://www.youtube.com/watch?v=WzIJEGEcRgo",
-            thumbnail: "https://i.ytimg.com/vi/fGJONB8-l0o/maxresdefault.jpg",
-            lang: 'uz'
-        },
-        {
-            title: "Mental arifmetika 4-qism",
-            url: "https://www.youtube.com/watch?v=7WYcI55Q7Rw",
-            thumbnail: "https://i.ytimg.com/vi/fGJONB8-l0o/maxresdefault.jpg",
-            lang: 'uz'
-        },
-        {
-            title: "Mental arifmetika 5-qism",
-            url: "https://www.youtube.com/watch?v=TCjY8piYUFc",
-            thumbnail: "https://i.ytimg.com/vi/fGJONB8-l0o/maxresdefault.jpg",
-            lang: 'uz'
-        },
     ]
 ]
 

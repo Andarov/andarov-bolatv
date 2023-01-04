@@ -69,11 +69,9 @@ if(uzbSong, engSong){
 
 // Display math videos
 const starterMath = document.querySelector('#starter-math')
-const mental = document.querySelector('#mental')
 
-if(starterMath, mental){
+if(starterMath){
     displayVideos(starterMath, mathVideos[0])
-    displayVideos(mental, mathVideos[1])
 }
 
 
