@@ -77,11 +77,9 @@ if(starterMath){
 
 // Display english videos
 const english = document.querySelector('#english')
-const lucking = document.querySelector('#lucking')
 
-if(english, lucking){
+if(english){
     displayVideos(english, englishVid[0])
-    displayVideos(lucking, englishVid[1])
 }
 
 // Display badantarbiya videos

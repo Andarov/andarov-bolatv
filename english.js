@@ -62,58 +62,6 @@ const englishVid = [
             lang: 'uz'
         },
     ],
-    // Lucking english
-    [
-        {
-            title: "Lucking english 1-qism",
-            url: "https://www.youtube.com/watch?v=yxJ0esYxnK0",
-            thumbnail: "https://i.ytimg.com/vi/7HUW_aukApo/maxresdefault.jpg",
-            lang: 'uz'
-        },
-        {
-            title: "Lucking english 2-qism",
-            url: "https://www.youtube.com/watch?v=FNXYD2AfPxg",
-            thumbnail: "https://i.ytimg.com/vi/7HUW_aukApo/maxresdefault.jpg",
-            lang: 'uz'
-        },
-        {
-            title: "Lucking english 3-qism",
-            url: "https://www.youtube.com/watch?v=1PtoUcGWFYY&t=251s",
-            thumbnail: "https://i.ytimg.com/vi/7HUW_aukApo/maxresdefault.jpg",
-            lang: 'uz'
-        },
-        {
-            title: "Lucking english 4-qism",
-            url: "https://www.youtube.com/watch?v=qvjMXAR2as4",
-            thumbnail: "https://i.ytimg.com/vi/7HUW_aukApo/maxresdefault.jpg",
-            lang: 'uz'
-        },
-        {
-            title: "Lucking english 5-qism",
-            url: "https://www.youtube.com/watch?v=WpAk1yYsO6Y",
-            thumbnail: "https://i.ytimg.com/vi/7HUW_aukApo/maxresdefault.jpg",
-            lang: 'uz'
-        },
-        {
-            title: "Lucking english 6-qism",
-            url: "https://www.youtube.com/watch?v=tcqNnN0EIHo",
-            thumbnail: "https://i.ytimg.com/vi/7HUW_aukApo/maxresdefault.jpg",
-            lang: 'uz'
-        },
-        {
-            title: "Lucking english 7-qism",
-            url: "https://www.youtube.com/watch?v=sEV_hmvhY4g",
-            thumbnail: "https://i.ytimg.com/vi/7HUW_aukApo/maxresdefault.jpg",
-            lang: 'uz'
-        },
-        {
-            title: "Lucking english 8-qism",
-            url: "https://www.youtube.com/watch?v=ycMZF65h7HU",
-            thumbnail: "https://i.ytimg.com/vi/7HUW_aukApo/maxresdefault.jpg",
-            lang: 'uz'
-        },
-    ]
-    
 ]
 
 export default englishVid
