@@ -44,16 +44,16 @@ const avto = document.querySelector('#avto');
 const panda = document.querySelector('#panda');
 const qunduz = document.querySelector('#qunduz');
 const mittivoylar = document.querySelector('#mittivoylar');
-const dogs = document.querySelector('#dogs');
+const nussa = document.querySelector('#nussa');
 const masha = document.querySelector('#masha');
 const multic = document.querySelector('#multic');
-if(pomidor, avto, panda, qunduz, mittivoylar, dogs, masha, multic){
+if(pomidor, avto, panda, qunduz, mittivoylar, nussa, masha, multic){
     displayVideos(pomidor, cartoon[0])
     displayVideos(avto, cartoon[1])
     displayVideos(panda, cartoon[2])
     displayVideos(qunduz, cartoon[3])
     displayVideos(mittivoylar, cartoon[4])
-    displayVideos(dogs, cartoon[5])
+    displayVideos(nussa, cartoon[5])
     displayVideos(masha, cartoon[6])
     displayVideos(multic, cartoon[7])
 }
