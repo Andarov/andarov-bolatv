@@ -84,11 +84,9 @@ if(english){
 
 // Display badantarbiya videos
 const exersices = document.querySelector('#exersices')
-const bardam = document.querySelector('#bardam')
 
-if(exersices, bardam){
+if(exersices){
     displayVideos(exersices, badantarbiya[0])
-    displayVideos(bardam, badantarbiya[1])
 }
 
 let videos;
