@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+*:focus{
+    outline: 3px dotted rgb(4, 195, 4);
+    outline-offset: 2px;
+}
