@@ -830,13 +830,38 @@ video {
   border-top-right-radius: 0.75rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+.border-dotted {
+  border-style: dotted;
 }
 
 .border-br-darkBlue {
   --tw-border-opacity: 1;
   border-color: rgb(0 70 134 / var(--tw-border-opacity));
+}
+
+.border-br-green {
+  --tw-border-opacity: 1;
+  border-color: rgb(49 148 55 / var(--tw-border-opacity));
 }
 
 .bg-slate-200 {
