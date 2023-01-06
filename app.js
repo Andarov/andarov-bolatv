@@ -12,14 +12,14 @@ const displayVideos = function(section, api){
         const { title, url, thumbnail, lang} = item;
         
         section.innerHTML += `
-        <div id="video" class="relative group max-w-md">
+        <div id="video" class="relative group max-w-md pb-3 rounded-xl transition-all duration-300 hover:shadow-xl hover:bg-white">
         <a class="w-full inline-flex flex-col justify-center items-center" id="video-link" href="${url}">
-        <picture class="w-full bg-slate-200">
+        <picture class="w-full rounded-t-xl bg-slate-200">
         <source srcset="${thumbnail}" type="image/webp">
-        <img class="w-full" id="video-img" src="${thumbnail}" alt="${title}" width="395" height="224">
+        <img class="w-full rounded-t-xl" id="video-img" src="${thumbnail}" alt="${title}" width="395" height="224">
         </picture>
         </a>
-        <h3 id="video-title" class="bg-transparent text-center text-xl text-br-darkBlue font-semibold mt-2">${title}</h3>
+        <h3 id="video-title" class="bg-transparent text-center text-xl text-br-darkBlue font-semibold mt-1">${title}</h3>
         <button id="video-btn" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl">
         <i class="text-red-600 fa-brands fa-youtube group-hover:text-red-400 transition-all duration-500"></i>
         </button>
