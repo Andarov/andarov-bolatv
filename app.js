@@ -5,6 +5,7 @@ import songs from "./songs.js";
 import badantarbiya from "./badantarbiya.js";
 import mathVideos from "./math.js";
 import englishVid from "./english.js";
+import rasm from "./rasm.js";
 
 // Display videos function
 const displayVideos = function(section, api){
@@ -19,7 +20,7 @@ const displayVideos = function(section, api){
         <img class="w-full rounded-t-xl" id="video-img" src="${thumbnail}" alt="${title}" width="395" height="224">
         </picture>
         </a>
-        <h3 id="video-title" class="bg-transparent text-center text-xl text-br-darkBlue font-semibold mt-1">${title}</h3>
+        <h3 id="video-title" class="bg-transparent text-center text-xl text-[#0b4002] font-semibold mt-1">${title}</h3>
         <button id="video-btn" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl">
         <i class="text-red-600 fa-brands fa-youtube group-hover:text-red-400 transition-all duration-500"></i>
         </button>
@@ -87,6 +88,13 @@ const exersices = document.querySelector('#exersices')
 
 if(exersices){
     displayVideos(exersices, badantarbiya[0])
+}
+
+// Display draw videos
+const draw = document.querySelector('#draw')
+
+if(draw){
+    displayVideos(draw, rasm[0])
 }
 
 let videos;

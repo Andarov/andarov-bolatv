@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bola Tv | Qiziqarli matematika</title>
+    <title>Bola Tv | Birgalikda rasm chizamiz</title>
     <!-- Font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +51,7 @@
                         <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="songs.html">Qo'shiqlar</a>
                     </li>
                     <li>
-                        <a class="text-xl font-medium text-green-600" href="math.html">Qiziqarli matematika</a>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="math.html">Qiziqarli matematika</a>
                     </li>
                     <li>
                         <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="english.html">Ingliz tili</a>
@@ -60,12 +60,12 @@
                         <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="badantarbiya.html">Badantarbiya</a>
                     </li>
                     <li>
-                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="rasm.html">Rasm</a>
+                        <a class="text-xl font-medium text-green-600" href="rasm.html">Rasm</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        
+
         <!-- open-menu -->
         <div id="open-menu" class="transition-all duration-500 -translate-x-full w-full fixed top-0 h-full z-50 md:hidden">
             <div id="overl" class="bg-[#929292] fixed top-0 h-full w-full"></div>
@@ -103,14 +103,14 @@
                 </ul>
             </div>
         </div>
-        
+
     </header>
     
     <!-- Hero -->
     <div class="mb-5">
         <div class="relative w-full">
-            <img class="w-full h-36 md:h-56" src="./img/math-page.png" alt="Ertak sahifasi">
-            <h1 class="absolute top-14 left-1/2 text-xl text-br-red font-bold sm:text-2xl sm:top-14 md:text-4xl md:top-20 lg:text-4xl lg:-translate-x-1/2">Qiziqarli matematika</h1>
+            <img class="w-full h-36 md:h-56" src="./img/train-page.png" alt="Rasm sahifasi">
+            <h1 class="absolute top-10 left-1/2 -translate-x-1/2 text-xl text-br-red font-bold sm:text-2xl sm:top-14 md:text-4xl md:top-20 lg:text-5xl lg:-translate-x-1/2">Rasm chizamiz</h1>
         </div>
     </div>
     
@@ -130,35 +130,34 @@
                 </select>
             </form>
         </section>
-        
-        <!-- Boshlangich matematika -->
-        <section class="w-full max-w-base mx-auto px-5 mb-8 md:mb-10">   
             
-            <h2 class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8 mb-5 md:text-2xl md:mb-10">Boshlangich matematika</h2>
-            <div id="starter-math" class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-y-5">
+            <!-- Rasm video -->
+            <section class="w-full max-w-base mx-auto px-5 mb-8 md:mb-16">   
+                
+                <h2 class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8 mb-5 md:text-2xl md:mb-10">Rasm chizamiz</h2>
+                <div id="draw" class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-y-5">
+                </div>
+                
+            </section>
+            
+        </main>
+        
+        
+        <footer class="shadow-2xl py-8">
+            <p class="text-lg font-bold text-center text-br-green sm:text-xl zmd:text-2xl">Bola Tv ©2022 year | <span class="hidden md:inline-block">developer</span> Andarov</p>
+        </footer>
+
+        <!-- Modal -->
+        <div id="modal-wrapper" class="hidden bg-black/50 w-screen h-screen fixed top-0 left-0 z-40">
+            
+            <div id="modal" class="hidden w-11/12 h-96 bg-white rounded-lg z-20 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:max-w-3xl">
+                <button id="exit-btn" class="absolute -top-10 right-1 z-50 cursor-pointer">
+                    <i class="text-3xl text-white fa-solid fa-xmark hover:text-red-400 md:text-4xl"></i>
+                </button>
             </div>
-            
-        </section>
-        
-        
-    </main>
-    
-    
-    <footer class="shadow-2xl py-8">
-        <p class="text-lg font-bold text-center text-br-green sm:text-xl md:text-2xl">Bola Tv ©2022 year | <span class="hidden md:inline-block">developer</span> Andarov</p>
-    </footer>
-    
-    <!-- Modal -->
-    <div id="modal-wrapper" class="hidden bg-black/50 w-screen h-screen fixed top-0 left-0 z-40">
-        
-        <div id="modal" class="hidden w-11/12 h-96 bg-white rounded-lg z-20 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:max-w-3xl">
-            <button id="exit-btn" class="absolute -top-10 right-1 z-50 cursor-pointer">
-                <i class="text-3xl text-white fa-solid fa-xmark hover:text-red-400 md:text-4xl"></i>
-            </button>
+
         </div>
         
-    </div>
-    
-    <script type="module" src="app.js"></script>
-</body>
-</html>
+        <script type="module" src="app.js"></script>
+    </body>
+    </html>
