@@ -12,7 +12,7 @@ const displayVideos = function(section, api){
         const { title, url, thumbnail, lang} = item;
         
         section.innerHTML += `
-        <div id="video" class="relative group max-w-md pb-3 rounded-xl transition-all duration-300 hover:shadow-xl hover:bg-white">
+        <div id="video" class="relative group max-w-md pb-3 rounded-xl transition-all duration-300 cursor-pointer hover:shadow-xl hover:bg-white">
         <a class="w-full inline-flex flex-col justify-center items-center" id="video-link" href="${url}">
         <picture class="w-full rounded-t-xl bg-slate-200">
         <source srcset="${thumbnail}" type="image/webp">
