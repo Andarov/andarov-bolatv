@@ -23,7 +23,7 @@ const displayVideos = function (section, api) {
                     </button>
                 </picture>
             </a>
-            <h3 id="video-title" class="bg-transparent text-lg text-center sm:text-xl text-black font-semibold mt-1">${title}</h3>
+            <h3 id="video-title" class="bg-transparent text-lg text-center text-black font-semibold mt-1">${title}</h3>
             <span class="hidden" id="video-lang">${lang}</span>
         </div>
         `;
@@ -125,13 +125,13 @@ if (pomidorMob, avtoMob, pandaMob, qunduzMob, nussaMob, mashaMob, multicMob) {
 }
 
 // Display songs videos
-// const uzbSong = document.querySelector('#uzb-song')
-// const engSong = document.querySelector('#eng-song')
+const uzbSongMob = document.querySelector('#uzb-song-mob')
+const engSongMob = document.querySelector('#eng-song-mob')
 
-// if(uzbSong, engSong){
-//     displayVideos(uzbSong, songs[0])
-//     displayVideos(engSong, songs[1])
-// }
+if(uzbSongMob){
+    displayVideos(uzbSongMob, songs[0])
+    displayVideos(engSongMob, songs[1])
+}
 
 // Display math videos
 // const starterMath = document.querySelector('#starter-math')
@@ -390,6 +390,26 @@ const avtoSlider = new Swiper(".avto-mob", {
     navigation: {
       nextEl: ".swiper-button-next-10",
       prevEl: ".swiper-button-prev-10",
+    },
+  });
+
+  const uzbSongSlider = new Swiper(".uzb-song-mob", {
+    grabCursor: true,
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next-11",
+      prevEl: ".swiper-button-prev-11",
+    },
+  });
+
+  const engSongSlider = new Swiper(".eng-song-mob", {
+    grabCursor: true,
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next-12",
+      prevEl: ".swiper-button-prev-12",
     },
   });
 
