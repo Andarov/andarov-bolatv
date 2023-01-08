@@ -105,7 +105,7 @@ const displayVideosMob = function (swipper, api) {
       const { title, url, thumbnail, lang } = item;
   
       swipper.innerHTML += `
-          <div class="swiper-slide flex h-75 items-center justify-center relative">
+          <div class="swiper-slide flex h-auto items-center justify-center relative">
               <div id="video" class="relative group max-w-md pb-3 rounded-xl transition-all duration-300 cursor-pointer bg-white/90">
                   <a class="w-full inline-flex flex-col justify-center items-center" id="video-link" href="${url}">
                       <picture class="w-full rounded-t-xl bg-slate-200 relative">
