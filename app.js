@@ -95,7 +95,7 @@ if (draw) {
   displayVideos(draw, rasm[0]);
 }
 
-// MOBILe
+// MOBILE
 // Display ertak videos
 const uzbTaleMob = document.querySelector("#uzb-tale-mob");
 const worldTaleMob = document.querySelector("#world-tale-mob");
@@ -133,33 +133,6 @@ if(uzbSongMob){
     displayVideos(engSongMob, songs[1])
 }
 
-// Display math videos
-// const starterMath = document.querySelector('#starter-math')
-
-// if(starterMath){
-//     displayVideos(starterMath, mathVideos[0])
-// }
-
-// Display english videos
-// const english = document.querySelector('#english')
-
-// if(english){
-//     displayVideos(english, englishVid[0])
-// }
-
-// Display badantarbiya videos
-// const exersices = document.querySelector('#exersices')
-
-// if(exersices){
-//     displayVideos(exersices, badantarbiya[0])
-// }
-
-// Display draw videos
-// const draw = document.querySelector('#draw')
-
-// if(draw){
-//     displayVideos(draw, rasm[0])
-// }
 
 let videos;
 // Iframe
@@ -189,7 +162,6 @@ function setupVideo(video) {
     iframe = createIframe(id);
 
     modal.prepend(iframe);
-    console.log(modal);
   });
 
   link.removeAttribute("href");
@@ -261,11 +233,11 @@ const searchName = function () {
 };
 searchName();
 
+// Mobile menu
 const elMenu = document.getElementById("menu");
 const elOpenMenu = document.getElementById("open-menu");
 const elOverl = document.getElementById("overl");
 elMenu.addEventListener("click", function () {
-  console.log("salom");
   elOpenMenu.classList.remove("-translate-x-full");
   document.body.classList.add("overflow-hidden");
 });
@@ -275,6 +247,7 @@ elOverl.addEventListener("click", function () {
   document.body.classList.remove("overflow-hidden");
 });
 
+// Select (video tili orqali saralash)
 const elSelect = document.querySelector("#select");
 
 elSelect.addEventListener("change", function () {
@@ -290,6 +263,7 @@ elSelect.addEventListener("change", function () {
     });
   });
 });
+
 
 const uzbErtak = new Swiper(".uzb-tale-mob", {
   grabCursor: true,
