@@ -17,7 +17,7 @@ const displayVideos = function (section, api) {
             <a class="w-full inline-flex flex-col justify-center items-center" id="video-link" href="${url}">
                 <picture class="w-full rounded-t-xl bg-slate-200 relative">
                     <source srcset="${thumbnail}" type="image/webp">
-                    <img class="w-full rounded-t-xl" id="video-img" src="${thumbnail}" alt="${title}" width="395" height="224">
+                    <img class="w-full min-h-[180px] rounded-t-xl" id="video-img" src="${thumbnail}" alt="${title}" width="395" height="224">
                     <button id="video-btn" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl">
                     <i class="text-6xl text-red-600 fa-brands fa-youtube group-hover:text-red-400 transition-all duration-500"></i>
                     </button>

@@ -736,6 +736,22 @@ video {
   height: 5rem;
 }
 
+.min-h-\[\] {
+  min-height: ;
+}
+
+.min-h-\[200px\] {
+  min-height: 200px;
+}
+
+.min-h-\[0px\] {
+  min-height: 0px;
+}
+
+.min-h-\[180px\] {
+  min-height: 180px;
+}
+
 .w-full {
   width: 100%;
 }
