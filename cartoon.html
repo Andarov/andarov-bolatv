@@ -34,66 +34,62 @@
 
 
     <!-- Header -->
-    <header class="bg-gradient-to-r from-[#FAEDDD] to-[#DBF0FB] pt-8 pb-8 md:pb-14">
+    <header class="bg-gradient-to-r from-[#FAEDDD] to-[#DBF0FB] py-7 md:pb-14">
         <!-- container -->
         <div class="w-full max-w-base px-5 mx-auto">
             <div class="flex justify-between items-center md:mb-8">
                 <!-- logo -->
                 <a class="font-serif font-bold text-2xl sm:text-3xl" href="index.html">Bola Tv</a>
                 <!-- subscribe -->
-                <a class="hidden md:inline-block bg-blue-200 px-5 py-2 rounded transition-all duration-300 hover:bg-green-300"
-                    href="#">
+                <a class="hidden md:inline-block bg-blue-200 px-5 py-2 rounded transition-all duration-300 hover:bg-green-300" href="#">
                     <i class="fa-brands fa-telegram mr-2"></i>
                     <span>Obuna bo'lish</span>
                 </a>
                 <!-- menu icon -->
-                <button id="menu" class="inline-block text-xl md:hidden">
-                    <i class="fa-solid fa-bars"></i>
+                <button id="menu" class="inline-block active:opacity-60 focus:outline-none md:hidden">
+                    <img src="./img/menu.svg" alt="Hamburger menu" width="55" height="55">
                 </button>
             </div>
             <!-- nav -->
             <nav class="hidden md:flex justify-center items-center px-5 py-3 bg-white rounded-lg shadow-md">
                 <ul class="flex flex-wrap gap-x-9">
                     <li>
-                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="index.html">Bosh sahifa</a>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="index.html">Bosh sahifa</a>
                     </li>
                     <li>
-                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="ertak.html">Ertaklar</a>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="ertak.html">Ertaklar</a>
                     </li>
                     <li>
-                        <a class="text-xl font-medium text-green-600" href="#">Multfilm</a>
+                        <a class="text-xl font-medium text-green-600" href="cartoon.html">Multfilm</a>
                     </li>
                     <li>
-                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="songs.html">Qo'shiqlar</a>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="songs.html">Qo'shiqlar</a>
                     </li>
                     <li>
-                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="#">Qiziqarli matematika</a>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="math.html">Qiziqarli matematika</a>
                     </li>
                     <li>
-                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="english.html">Ingliz tili</a>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="english.html">Ingliz tili</a>
                     </li>
                     <li>
-                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="badantarbiya.html">Badantarbiya</a>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="badantarbiya.html">Badantarbiya</a>
                     </li>
                     <li>
-                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="rasm.html">Rasm</a>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="rasm.html">Rasm</a>
                     </li>
                 </ul>
             </nav>
         </div>
-
+        
         <!-- open-menu -->
-        <div id="open-menu"
-            class="transition-all duration-500 -translate-x-full w-full fixed top-0 h-full z-50 md:hidden">
-            <div id="overl" class="bg-[#929292] fixed top-0 h-full w-full"></div>
-            <div class="flex flex-col max-w-[300px] h-full overflow-auto bg-white pt-5 px-6 pb-14 fixed">
+        <div id="open-menu" class="transition-all duration-500 -translate-x-full w-full fixed top-0 h-full z-50 md:hidden">
+            <button id="mob-exit" class="z-50 absolute top-3 right-3">
+                <img class="" src="./img/mob-exit.png" alt="Exit icon" width="40" height="40">
+            </button>
+
+            <div id="overl" class="bg-[#929292] fixed top-0 h-full w-full">
+            </div>
+            <div class="flex flex-col max-w-[320px] h-full overflow-auto bg-white pt-5 px-6 pb-14 fixed">
                 <!-- logo -->
                 <div class="pb-5 border-b">
                     <a class="font-serif font-bold text-2xl sm:text-3xl text-br-green" href="index.html">Bola Tv</a>
@@ -101,41 +97,33 @@
                 <!-- navbar -->
                 <ul class="flex flex-col w-full h-auto border-b divide-y divide-dashed">
                     <li class="py-1">
-                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="index.html">Bosh sahifa</a>
+                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600" href="index.html">Bosh sahifa</a>
                     </li>
                     <li class="py-1">
-                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="ertak.html">Ertaklar</a>
+                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600" href="ertak.html">Ertaklar</a>
                     </li>
                     <li class="py-1">
-                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="cartoon.html">Multfilm</a>
+                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600" href="cartoon.html">Multfilm</a>
                     </li>
                     <li class="py-1">
-                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="songs.html">Qo'shiqlar</a>
+                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600" href="songs.html">Qo'shiqlar</a>
                     </li>
                     <li class="py-1">
-                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="math.html">Qiziqarli matematika</a>
+                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600" href="math.html">Qiziqarli matematika</a>
                     </li>
                     <li class="py-1">
-                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="english.html">Ingliz tili</a>
+                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600" href="english.html">Ingliz tili</a>
                     </li>
                     <li class="py-1">
-                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="badantarbiya.html">Badantarbiya</a>
+                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600" href="badantarbiya.html">Badantarbiya</a>
                     </li>
                     <li class="py-1">
-                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600"
-                            href="rasm.html">Rasm</a>
+                        <a class="inline-block w-full text-xl font-medium transition-all duration-300 hover:text-green-600" href="rasm.html">Rasm</a>
                     </li>
                 </ul>
             </div>
         </div>
-
+        
     </header>
 
     <!-- Hero -->
@@ -172,7 +160,7 @@
         <!-- Doppi pomidor -->
         <section class="hidden sm:block w-full max-w-base mx-auto px-5 mb-8 md:mb-10">
 
-            <h2 class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8 sm:mb-5 md:text-2xl md:mb-10">
+            <h2 class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8 md:text-2xl md:mb-10">
                 Do'ppi pomidor</h2>
 
             <div id="pomidor" class="sm:grid gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-y-5">
@@ -219,7 +207,7 @@
         <section class="hidden sm:block w-full max-w-base mx-auto px-5 mb-8 md:mb-10">
 
             <h2
-                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8">
+                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8 md:text-2xl md:mb-10">
                 Avto sarguzashtlar</h2>
             <div id="avto" class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-y-5">
             </div>
@@ -265,7 +253,7 @@
         <section class="hidden sm:block w-full max-w-base mx-auto px-5 mb-8 md:mb-10">
 
             <h2
-                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8">
+                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8 md:text-2xl md:mb-10">
                 Kung fu panda</h2>
             <div id="panda" class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-y-5">
             </div>
@@ -311,7 +299,7 @@
         <section class="hidden sm:block w-full max-w-base mx-auto px-5 mb-8 md:mb-10">
 
             <h2
-                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8">
+                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8 md:text-2xl md:mb-10">
                 Qunduz amaki</h2>
             <div id="qunduz" class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-y-5">
             </div>
@@ -357,7 +345,7 @@
         <section class="hidden sm:block w-full max-w-base mx-auto px-5 mb-8 md:mb-10">
 
             <h2
-                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8">
+                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8 md:text-2xl md:mb-10">
                 Mittivoylar</h2>
             <div id="mittivoylar" class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-y-5">
             </div>
@@ -403,7 +391,7 @@
         <section class="hidden sm:block w-full max-w-base mx-auto px-5 mb-8 md:mb-10">
 
             <h2
-                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8">
+                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8 md:text-2xl md:mb-10">
                 Nussa</h2>
             <div id="nussa" class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-y-5">
             </div>
@@ -449,7 +437,7 @@
         <section class="hidden sm:block w-full max-w-base mx-auto px-5 mb-8 md:mb-10">
 
             <h2
-                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8">
+                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8 md:text-2xl md:mb-10">
                 Masha va ayiq</h2>
             <div id="masha" class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-y-5">
             </div>
@@ -495,7 +483,7 @@
         <section class="hidden sm:block w-full max-w-base mx-auto px-5 mb-8 md:mb-10">
 
             <h2
-                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8">
+                class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8 md:text-2xl md:mb-10">
                 Sara multfilmlar</h2>
             <div id="multic" class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-y-5">
             </div>

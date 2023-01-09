@@ -17,9 +17,8 @@
 </head>
 <body class="font-signika">
     
-    
     <!-- Header -->
-    <header class="bg-gradient-to-r from-[#FAEDDD] to-[#DBF0FB] pt-8 pb-8 md:pb-14">
+    <header class="bg-gradient-to-r from-[#FAEDDD] to-[#DBF0FB] py-7 md:pb-14">
         <!-- container -->
         <div class="w-full max-w-base px-5 mx-auto">
             <div class="flex justify-between items-center md:mb-8">
@@ -31,8 +30,8 @@
                     <span>Obuna bo'lish</span>
                 </a>
                 <!-- menu icon -->
-                <button id="menu" class="inline-block text-xl md:hidden">
-                    <i class="fa-solid fa-bars"></i>
+                <button id="menu" class="inline-block active:opacity-60 focus:outline-none md:hidden">
+                    <img src="./img/menu.svg" alt="Hamburger menu" width="55" height="55">
                 </button>
             </div>
             <!-- nav -->
@@ -68,8 +67,13 @@
         
         <!-- open-menu -->
         <div id="open-menu" class="transition-all duration-500 -translate-x-full w-full fixed top-0 h-full z-50 md:hidden">
-            <div id="overl" class="bg-[#929292] fixed top-0 h-full w-full"></div>
-            <div class="flex flex-col max-w-[300px] h-full overflow-auto bg-white pt-5 px-6 pb-14 fixed">
+            <button id="mob-exit" class="z-50 absolute top-3 right-3">
+                <img class="" src="./img/mob-exit.png" alt="Exit icon" width="40" height="40">
+            </button>
+
+            <div id="overl" class="bg-[#929292] fixed top-0 h-full w-full">
+            </div>
+            <div class="flex flex-col max-w-[320px] h-full overflow-auto bg-white pt-5 px-6 pb-14 fixed">
                 <!-- logo -->
                 <div class="pb-5 border-b">
                     <a class="font-serif font-bold text-2xl sm:text-3xl text-br-green" href="index.html">Bola Tv</a>
@@ -307,6 +311,7 @@
         
     </main>
     
+    <!-- Footer -->
     <footer class="shadow-2xl py-8">
         <p class="text-lg font-bold text-center text-br-green sm:text-xl md:text-2xl">Bola Tv ©2022 year | <span class="hidden md:inline-block">developer</span> Andarov</p>
     </footer>

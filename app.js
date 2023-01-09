@@ -13,7 +13,7 @@ const displayVideos = function (section, api) {
     const { title, url, thumbnail, lang } = item;
 
     section.innerHTML += `
-        <div id="video" class="relative swiper-slide  group max-w-md pb-3 rounded-xl transition-all duration-300 cursor-pointer border-2 shadow-md bg-gradient-to-r from-[#FAEDDD] to-[#DBF0FB]">
+        <div id="video" class="relative swiper-slide group max-w-md pb-3 rounded-xl transition-all duration-300 cursor-pointer border-2 shadow-md bg-gradient-to-r from-[#FAEDDD] to-[#DBF0FB]">
             <a class="w-full inline-flex flex-col justify-center items-center" id="video-link" href="${url}">
                 <picture class="w-full rounded-t-xl bg-slate-200 relative">
                     <source srcset="${thumbnail}" type="image/webp">
@@ -237,12 +237,14 @@ searchName();
 const elMenu = document.getElementById("menu");
 const elOpenMenu = document.getElementById("open-menu");
 const elOverl = document.getElementById("overl");
+const elMobExit = document.getElementById("mob-exit");
 elMenu.addEventListener("click", function () {
   elOpenMenu.classList.remove("-translate-x-full");
   document.body.classList.add("overflow-hidden");
 });
 
-elOverl.addEventListener("click", function () {
+// Exit mobile menu
+elMobExit.addEventListener("click", function () {
   elOpenMenu.classList.add("-translate-x-full");
   document.body.classList.remove("overflow-hidden");
 });
@@ -264,7 +266,7 @@ elSelect.addEventListener("change", function () {
   });
 });
 
-
+// Swipper
 const uzbErtak = new Swiper(".uzb-tale-mob", {
   grabCursor: true,
   slidesPerView: 1.2,
