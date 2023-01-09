@@ -133,7 +133,6 @@ if(uzbSongMob){
     displayVideos(engSongMob, songs[1])
 }
 
-
 let videos;
 // Iframe
 function findVideos() {
