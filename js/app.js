@@ -13,7 +13,7 @@ const displayVideos = function (section, api) {
     const { title, url, thumbnail, lang } = item;
 
     section.innerHTML += `
-        <div id="video" class="relative swiper-slide group max-w-md pb-3 rounded-xl transition-all duration-300 cursor-pointer border-2 shadow-md bg-gradient-to-r from-[#FAEDDD] to-[#DBF0FB]">
+        <div id="video" class="relative swiper-slide group max-w-md pb-3 rounded-xl transition-all duration-300 cursor-pointer border-2 shadow-md bg-white">
             <a class="w-full inline-flex flex-col justify-center items-center" id="video-link" href="${url}">
                 <picture class="w-full rounded-t-xl bg-slate-200 relative">
                     <source srcset="${thumbnail}" type="image/webp">
