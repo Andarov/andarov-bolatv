@@ -15,7 +15,7 @@ const displayVideos = function (section, api) {
     section.innerHTML += `
         <div id="video" class="relative swiper-slide group max-w-md pb-3 rounded-xl transition-all duration-300 cursor-pointer border-2 shadow-md bg-white">
             <a class="w-full inline-flex flex-col justify-center items-center" id="video-link" href="${url}">
-                <picture class="w-full rounded-t-xl bg-slate-200 relative">
+                <picture class="w-full h-full rounded-t-xl bg-slate-200 relative">
                     <source srcset="${thumbnail}" type="image/webp">
                     <img class="w-full min-h-[180px] rounded-t-xl" id="video-img" src="${thumbnail}" alt="${title}" width="395" height="224">
                     <button id="video-btn" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl">
