@@ -261,6 +261,9 @@ elSelect.addEventListener("change", function () {
       } else {
         lang.parentElement.classList.add("hidden");
       }
+      if(elSelect.value == 'all'){
+        lang.parentElement.classList.remove("hidden");
+      }
     });
   });
 });
