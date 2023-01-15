@@ -270,6 +270,7 @@ elSelect.addEventListener("change", function () {
   });
 });
 
+
 // Swipper
 const uzbErtak = new Swiper(".uzb-tale-mob", {
   grabCursor: true,
