@@ -1,11 +1,13 @@
 // Import files
-import ertaklar from "./ertak.js";
-import cartoon from "./cartoon.js";
-import songs from "./songs.js";
-import badantarbiya from "./badantarbiya.js";
-import mathVideos from "./math.js";
-import englishVid from "./english.js";
-import rasm from "./rasm.js";
+// import ertaklar from "./ertak.js";
+// import cartoon from "./cartoon.js";
+// import songs from "./songs.js";
+// import badantarbiya from "./badantarbiya.js";
+// import mathVideos from "./math.js";
+// import englishVid from "./english.js";
+// import rasm from "./rasm.js";
+
+import { bolatv } from "./api.js";
 
 // Display videos function
 const displayVideos = function (section, api) {
@@ -34,8 +36,8 @@ const displayVideos = function (section, api) {
 const uzbTale = document.querySelector("#uzb-tale");
 const worldTale = document.querySelector("#world-tale");
 if ((uzbTale, worldTale)) {
-  displayVideos(uzbTale, ertaklar[0]);
-  displayVideos(worldTale, ertaklar[1]);
+  displayVideos(uzbTale, bolatv.ertaklar[0]);
+  displayVideos(worldTale, bolatv.ertaklar[1]);
 }
 
 // Display multic videos
@@ -48,14 +50,14 @@ const nussa = document.querySelector("#nussa");
 const masha = document.querySelector("#masha");
 const multic = document.querySelector("#multic");
 if ((pomidor, avto, panda, qunduz, mittivoylar, nussa, masha, multic)) {
-  displayVideos(pomidor, cartoon[0]);
-  displayVideos(avto, cartoon[1]);
-  displayVideos(panda, cartoon[2]);
-  displayVideos(qunduz, cartoon[3]);
-  displayVideos(mittivoylar, cartoon[4]);
-  displayVideos(nussa, cartoon[5]);
-  displayVideos(masha, cartoon[6]);
-  displayVideos(multic, cartoon[7]);
+  displayVideos(pomidor, bolatv.cartoon[0]);
+  displayVideos(avto, bolatv.cartoon[1]);
+  displayVideos(panda, bolatv.cartoon[2]);
+  displayVideos(qunduz, bolatv.cartoon[3]);
+  displayVideos(mittivoylar, bolatv.cartoon[4]);
+  displayVideos(nussa, bolatv.cartoon[5]);
+  displayVideos(masha, bolatv.cartoon[6]);
+  displayVideos(multic, bolatv.cartoon[7]);
 }
 
 // Display songs videos
@@ -63,36 +65,36 @@ const uzbSong = document.querySelector("#uzb-song");
 const engSong = document.querySelector("#eng-song");
 
 if ((uzbSong, engSong)) {
-  displayVideos(uzbSong, songs[0]);
-  displayVideos(engSong, songs[1]);
+  displayVideos(uzbSong, bolatv.songs[0]);
+  displayVideos(engSong, bolatv.songs[1]);
 }
 
 // Display math videos
 const starterMath = document.querySelector("#starter-math");
 
 if (starterMath) {
-  displayVideos(starterMath, mathVideos[0]);
+  displayVideos(starterMath, bolatv.mathVideos[0]);
 }
 
 // Display english videos
 const english = document.querySelector("#english");
 
 if (english) {
-  displayVideos(english, englishVid[0]);
+  displayVideos(english, bolatv.englishVid[0]);
 }
 
 // Display badantarbiya videos
 const exersices = document.querySelector("#exersices");
 
 if (exersices) {
-  displayVideos(exersices, badantarbiya[0]);
+  displayVideos(exersices, bolatv.badantarbiya[0]);
 }
 
 // Display draw videos
 const draw = document.querySelector("#draw");
 
 if (draw) {
-  displayVideos(draw, rasm[0]);
+  displayVideos(draw, bolatv.rasm[0]);
 }
 
 // MOBILE
@@ -100,8 +102,8 @@ if (draw) {
 const uzbTaleMob = document.querySelector("#uzb-tale-mob");
 const worldTaleMob = document.querySelector("#world-tale-mob");
 if ((uzbTaleMob, worldTaleMob)) {
-  displayVideos(uzbTaleMob, ertaklar[0]);
-  displayVideos(worldTaleMob, ertaklar[1]);
+  displayVideos(uzbTaleMob, bolatv.ertaklar[0]);
+  displayVideos(worldTaleMob, bolatv.ertaklar[1]);
 }
 
 // Display multic videos
@@ -114,14 +116,14 @@ const nussaMob = document.querySelector('#nussa-mob');
 const mashaMob = document.querySelector('#masha-mob');
 const multicMob = document.querySelector('#multic-mob');
 if (pomidorMob, avtoMob, pandaMob, qunduzMob, nussaMob, mashaMob, multicMob) {
-    displayVideos(pomidorMob, cartoon[0]);
-    displayVideos(avtoMob, cartoon[1])
-    displayVideos(pandaMob, cartoon[2])
-    displayVideos(qunduzMob, cartoon[3])
-    displayVideos(mittiMob, cartoon[4])
-    displayVideos(nussaMob, cartoon[5])
-    displayVideos(mashaMob, cartoon[6])
-    displayVideos(multicMob, cartoon[7])
+    displayVideos(pomidorMob, bolatv.cartoon[0]);
+    displayVideos(avtoMob, bolatv.cartoon[1])
+    displayVideos(pandaMob, bolatv.cartoon[2])
+    displayVideos(qunduzMob, bolatv.cartoon[3])
+    displayVideos(mittiMob, bolatv.cartoon[4])
+    displayVideos(nussaMob, bolatv.cartoon[5])
+    displayVideos(mashaMob, bolatv.cartoon[6])
+    displayVideos(multicMob, bolatv.cartoon[7])
 }
 
 // Display songs videos
@@ -129,8 +131,8 @@ const uzbSongMob = document.querySelector('#uzb-song-mob')
 const engSongMob = document.querySelector('#eng-song-mob')
 
 if(uzbSongMob){
-    displayVideos(uzbSongMob, songs[0])
-    displayVideos(engSongMob, songs[1])
+    displayVideos(uzbSongMob, bolatv.songs[0])
+    displayVideos(engSongMob, bolatv.songs[1])
 }
 
 let videos;
