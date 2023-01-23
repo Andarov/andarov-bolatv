@@ -7,6 +7,10 @@
     outline-offset: 2px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #overl{
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
