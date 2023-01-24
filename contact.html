@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bola Tv | Badantarbiya</title>
+    <title>Bola Tv | Murojaat yo'llash</title>
     <!-- Font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,13 +60,13 @@
                         <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="english.html">Ingliz tili</a>
                     </li>
                     <li>
-                        <a class="text-xl font-medium text-green-600" href="badantarbiya.html">Badantarbiya</a>
+                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="badantarbiya.html">Badantarbiya</a>
                     </li>
                     <li>
                         <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="rasm.html">Rasm</a>
                     </li>
                     <li>
-                        <a class="text-xl font-medium transition-all duration-300 hover:text-green-600" href="contact.html">Murojaat</a>
+                        <a class="text-xl font-medium text-green-600" href="contact.html">Murojaat</a>
                     </li>
                 </ul>
             </nav>
@@ -77,7 +77,7 @@
             <button id="mob-exit" class="z-50 absolute top-7 right-5">
                 <img src="./img/mob-exit.png" alt="Exit icon" width="50" height="50">
             </button>
-
+            
             <div id="overl" class="bg-white/20 fixed top-0 h-full w-full">
             </div>
             <div class="flex flex-col max-w-[320px] h-full overflow-auto bg-white pt-5 px-6 pb-14 fixed">
@@ -106,13 +106,13 @@
                         <a class="inline-block w-full text-xl font-medium" href="english.html">Ingliz tili</a>
                     </li>
                     <li class="py-1">
-                        <a class="inline-block w-full text-xl font-medium text-green-600" href="badantarbiya.html">Badantarbiya</a>
+                        <a class="inline-block w-full text-xl font-medium" href="badantarbiya.html">Badantarbiya</a>
                     </li>
                     <li class="py-1">
                         <a class="inline-block w-full text-xl font-medium" href="rasm.html">Rasm</a>
                     </li>
                     <li class="py-1">
-                        <a class="inline-block w-full text-xl font-medium" href="contact.html">Murojaat</a>
+                        <a class="inline-block w-full text-xl font-medium text-green-600" href="contact.html">Murojaat</a>
                     </li>
                 </ul>
             </div>
@@ -124,56 +124,64 @@
     <div class="mb-5">
         <div class="relative w-full">
             <img class="w-full h-36 md:h-56" src="./img/english-page.jpg" alt="Ertak sahifasi">
-            <h1 class="absolute top-10 left-1/2 -translate-x-1/2 text-xl text-br-red font-bold sm:text-2xl sm:top-14 md:text-4xl md:top-20 lg:text-5xl lg:-translate-x-1/2">Badantarbiya</h1>
+            <h1 class="absolute top-10 left-1/2 -translate-x-1/2 text-xl text-br-red font-bold sm:text-2xl sm:top-14 md:text-4xl md:top-20 lg:text-5xl lg:-translate-x-1/2">Murojaat yo'llash</h1>
         </div>
     </div>
-    
-    <!-- Main -->
-    <main class="bg-gradient-to-b from-white to-green-100 pb-16 md:py-10">
-        
-        <!-- Search and sort -->
-        <section class="w-full max-w-base mx-auto px-5 mb-8 md:mb-16">
-            <h2 class="hidden">Search</h2>
-            <form id="form" class="flex items-center justify-between">
-                <input id="name-input" class="w-3/5 text-base bg-transparent border-b border-br-darkBlue focus:outline-none mr-10 md:text-lg md:w-1/2" type="text" placeholder="Qidiruv">
-                
-                <select id="select" class="p-1 rounded-sm border-2 border-dotted border-br-green focus:outline-none sm:p-2 md:w-36" name="language">
-                    <option selected disabled>Tilni tanlang</option>
-                    <option value="all">Barchasi</option>
-                    <option value="uz">O'zbekcha</option>
-                    <option value="eng">Inglizcha</option>
-                    <option value="ru">Ruscha</option>
-                </select>
-            </form>
-        </section>
-            
-            <!-- Badantarbiya -->
-            <section class="w-full max-w-base mx-auto px-5 mb-8 md:mb-16">   
-                
-                <h2 class="text-lg text-br-red decoration-br-darkBlue underline underline-offset-8 mb-5 md:text-2xl md:mb-10">Badantarbiya</h2>
-                <div id="exersices" class="grid grid-cols-1 gap-x-2 gap-y-5 sm:grid-cols-2 md:grid-cols-3">
+
+    <main class="pb-16 xl:pt-14">
+        <section class="w-full max-w-base mx-auto px-5">
+            <h2 class="text-xl text-br-red font-bold mb-5 md:text-2xl">Taklif va fikrlar</h2>
+            <div class="flex justify-between flex-col md:flex-row">
+
+                <!-- Form -->
+                <div class="w-full mr-8 md:w-1/2 mb-5 md:mb-0">
+                    <form class="w-full" action="#">
+                        <!-- Ism va telefon raqami -->
+                        <div class="flex space-x-3 mb-3">
+                            <input class="w-full p-4 rounded-xl border-2" type="text" name="Ismi" autocomplete="off" placeholder="Ismingiz">
+                            <input class="w-full p-4 rounded-xl border-2" type="tell" name="Telefon raqami" autocomplete="off" placeholder="Telefon raqamingiz">
+                        </div>
+                        <!-- Telegram user -->
+                        <input class="w-full p-4 rounded-xl border-2 mb-3" type="text" name="Telegram user" autocomplete="off" placeholder="Telegram user">
+                        <!-- Xabar -->
+                        <textarea class="w-full resize-none overflow-auto p-4 rounded-xl border-2 min-h-[160px]" name="Xabar" placeholder="Taklif va fikrlar"></textarea>
+
+                        <div class="flex justify-end">
+                            <button class="bg-blue-200 px-8 py-2 rounded transition-all duration-300 hover:bg-green-300">Yuborish</button>
+                        </div>
+
+                    </form>
                 </div>
-                
-            </section>
-            
-        </main>
-        
-        
-        <footer class="shadow-2xl py-8">
-            <p class="text-lg font-bold text-center text-br-green sm:text-xl zmd:text-2xl">Bola Tv ©2022 year | <span class="hidden md:inline-block">developer</span> Andarov</p>
-        </footer>
 
-        <!-- Modal -->
-        <div id="modal-wrapper" class="hidden bg-black/50 w-screen h-screen fixed top-0 left-0 z-40">
-            
-            <div id="modal" class="hidden w-11/12 h-96 bg-white rounded-lg z-20 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:max-w-3xl">
-                <button id="exit-btn" class="absolute -top-10 right-1 z-50 cursor-pointer">
-                    <i class="text-3xl text-white fa-solid fa-xmark hover:text-red-400 md:text-4xl"></i>
-                </button>
-            </div>
+                <!-- Right -->
+                <div class="w-full flex flex-col items-center p-5 bg-green-100 rounded-xl md:w-1/2">
+                    <!-- Taklif -->
+                    <div class="max-w-sm flex flex-col justify-center items-center mb-4">
+                        <h3 class="text-lg font-semibold text-br-blue text-center mb-1">Takliflar</h3>
+                        <p class="text-center">Agarda har qanday takliflaringiz bo'lsa murojaat yo'llashdan tortinmang. Agarda sizning takliflaringizni ko'pchilikka foydali deb topsak, taklifingiz asosida yangiliklar qo'shishga harakat qilamiz.</p>
+                    </div>
 
-        </div>
-        
-        <script type="module" src="js/app.js"></script>
-    </body>
-    </html>
+                    <!-- Fikr -->
+                    <div class="max-w-sm flex flex-col justify-center items-center mb-4">
+                        <h3 class="text-lg font-semibold text-br-blue text-center mb-1">Fikrlar</h3>
+                        <p class="text-center">Saytimiz haqida har qanday fikrlaringizni yuborishingiz mumkin. Biz ular asosida ish yuritishga harakat qilamiz.</p>
+                    </div>
+
+                    <!-- Telefon -->
+                    <div class="max-w-sm flex flex-col justify-center items-center mb-4">
+                        <h3 class="text-lg font-semibold text-br-blue text-center mb-1">Qo'ngiroq qilish</h3>
+                        <a class="underline underline-offset-2" href="tel:+998889970033">+99888 997-00-33</a>
+                    </div>
+                </div>
+
+             </div>
+        </section>
+    </main>
+    
+    <footer class="shadow-2xl py-8 border-t bg-slate-50">
+        <p class="text-lg font-bold text-center text-br-green sm:text-xl md:text-2xl">Bola Tv ©2022 year | <span class="hidden md:inline-block">developer</span> Andarov</p>
+    </footer>
+    
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
