@@ -1,3 +1,5 @@
+import "../dist/output.css"
+
 // Display videos function
 export const displayVideos = function (section, api) {
     api.forEach(function (item) {

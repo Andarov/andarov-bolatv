@@ -1,4 +1,5 @@
 // Import files
+import "../dist/output.css"
 import { bolatv } from "./api.js";
 import { displayVideos } from "./displayVideos.js"
 

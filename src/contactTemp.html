@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bola Tv | Murojaat yo'llash</title>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
     <!-- Font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +15,6 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body class="font-signika">
     <!-- Back to top button -->
@@ -35,7 +36,7 @@
                 </a>
                 <!-- menu icon -->
                 <button id="menu" class="inline-block active:opacity-60 focus:outline-none md:hidden">
-                    <img src="./img/menu.svg" alt="Hamburger menu" width="55" height="55">
+                    <img src="./img/img/menu.svg" alt="Hamburger menu" width="55" height="55">
                 </button>
             </div>
             <!-- nav -->
@@ -75,7 +76,7 @@
         <!-- open-menu -->
         <div id="open-menu" class="transition-all duration-500 -translate-x-full w-full fixed top-0 h-full z-50 md:hidden">
             <button id="mob-exit" class="z-50 absolute top-7 right-5">
-                <img src="./img/mob-exit.png" alt="Exit icon" width="50" height="50">
+                <img src="./img/img/mob-exit.png" alt="Exit icon" width="50" height="50">
             </button>
             
             <div id="overl" class="bg-white/20 fixed top-0 h-full w-full">
@@ -128,7 +129,7 @@
     <!-- Hero -->
     <div class="mb-5">
         <div class="relative w-full">
-            <img class="w-full h-36 md:h-56" src="./img/english-page.jpg" alt="Ertak sahifasi">
+            <img class="w-full h-36 md:h-56" src="./img/img/english-page.jpg" alt="Ertak sahifasi">
             <h1 class="absolute top-10 left-1/2 -translate-x-1/2 text-xl text-br-red font-bold sm:text-2xl sm:top-14 md:text-4xl md:top-20 lg:text-5xl lg:-translate-x-1/2">Murojaat yo'llash</h1>
         </div>
     </div>
@@ -187,6 +188,5 @@
         <p class="text-lg font-bold text-center text-br-green sm:text-xl md:text-2xl">Bola Tv ©2022 year | <span class="hidden md:inline-block">developer</span> Andarov</p>
     </footer>
     
-    <script type="module" src="js/app.js"></script>
 </body>
 </html>

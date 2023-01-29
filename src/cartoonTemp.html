@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bola Tv | Multfilm</title>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -27,7 +29,6 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./dist/output.css">
 </head>
 
 <body class="font-signika">
@@ -50,7 +51,7 @@
                 </a>
                 <!-- menu icon -->
                 <button id="menu" class="inline-block active:opacity-60 focus:outline-none md:hidden">
-                    <img src="./img/menu.svg" alt="Hamburger menu" width="55" height="55">
+                    <img src="./img/img/menu.svg" alt="Hamburger menu" width="55" height="55">
                 </button>
             </div>
             <!-- nav -->
@@ -90,7 +91,7 @@
         <!-- open-menu -->
         <div id="open-menu" class="transition-all duration-500 -translate-x-full w-full fixed top-0 h-full z-50 md:hidden">
             <button id="mob-exit" class="z-50 absolute top-7 right-5">
-                <img src="./img/mob-exit.png" alt="Exit icon" width="50" height="50">
+                <img src="./img/img/mob-exit.png" alt="Exit icon" width="50" height="50">
             </button>
 
             <div id="overl" class="bg-white/20 fixed top-0 h-full w-full">
@@ -143,7 +144,7 @@
     <!-- Hero -->
     <div class="mb-5">
         <div class="relative w-full">
-            <img class="w-full h-36 md:h-56" src="./img/multic-page.jpg" alt="Ertak sahifasi">
+            <img class="w-full h-36 md:h-56" src="./img/img/multic-page.jpg" alt="Ertak sahifasi">
             <h1
                 class="absolute top-10 left-1/2 -translate-x-1/2 text-xl text-br-red font-bold sm:text-2xl sm:top-14 md:text-4xl md:top-16 lg:text-5xl">
                 Multfilm</h1>
@@ -195,11 +196,11 @@
                     <!-- Next -->
                     <div
                         class="swiper-button-next-3 absolute right-0 after:hidden before:hidden block focus:outline-none">
-                        <img width="22" src="./img/next.svg" alt="" />
+                        <img width="22" src="./img/img/next.svg" alt="" />
                     </div>
                     <!-- Prev -->
                     <div class="swiper-button-prev-3  block left-0 after:hidden before:hidden focus:outline-none">
-                        <img width="22" src="./img/prev.svg" alt="" />
+                        <img width="22" src="./img/img/prev.svg" alt="" />
                     </div>
                 </div>
 
@@ -241,11 +242,11 @@
                     <!-- Next -->
                     <div
                         class="swiper-button-next-4 absolute right-0 after:hidden before:hidden block focus:outline-none">
-                        <img width="22" src="./img/next.svg" alt="" />
+                        <img width="22" src="./img/img/next.svg" alt="" />
                     </div>
                     <!-- Prev -->
                     <div class="swiper-button-prev-4  block left-0 after:hidden before:hidden focus:outline-none">
-                        <img width="22" src="./img/prev.svg" alt="" />
+                        <img width="22" src="./img/img/prev.svg" alt="" />
                     </div>
                 </div>
 
@@ -287,11 +288,11 @@
                     <!-- Next -->
                     <div
                         class="swiper-button-next-5 absolute right-0 after:hidden before:hidden block focus:outline-none">
-                        <img width="22" src="./img/next.svg" alt="" />
+                        <img width="22" src="./img/img/next.svg" alt="" />
                     </div>
                     <!-- Prev -->
                     <div class="swiper-button-prev-5  block left-0 after:hidden before:hidden focus:outline-none">
-                        <img width="22" src="./img/prev.svg" alt="" />
+                        <img width="22" src="./img/img/prev.svg" alt="" />
                     </div>
                 </div>
 
@@ -333,11 +334,11 @@
                     <!-- Next -->
                     <div
                         class="swiper-button-next-6 absolute right-0 after:hidden before:hidden block focus:outline-none">
-                        <img width="22" src="./img/next.svg" alt="" />
+                        <img width="22" src="./img/img/next.svg" alt="" />
                     </div>
                     <!-- Prev -->
                     <div class="swiper-button-prev-6  block left-0 after:hidden before:hidden focus:outline-none">
-                        <img width="22" src="./img/prev.svg" alt="" />
+                        <img width="22" src="./img/img/prev.svg" alt="" />
                     </div>
                 </div>
 
@@ -379,11 +380,11 @@
                     <!-- Next -->
                     <div
                         class="swiper-button-next-7 absolute right-0 after:hidden before:hidden block focus:outline-none">
-                        <img width="22" src="./img/next.svg" alt="" />
+                        <img width="22" src="./img/img/next.svg" alt="" />
                     </div>
                     <!-- Prev -->
                     <div class="swiper-button-prev-7  block left-0 after:hidden before:hidden focus:outline-none">
-                        <img width="22" src="./img/prev.svg" alt="" />
+                        <img width="22" src="./img/img/prev.svg" alt="" />
                     </div>
                 </div>
 
@@ -425,11 +426,11 @@
                     <!-- Next -->
                     <div
                         class="swiper-button-next-8 absolute right-0 after:hidden before:hidden block focus:outline-none">
-                        <img width="22" src="./img/next.svg" alt="" />
+                        <img width="22" src="./img/img/next.svg" alt="" />
                     </div>
                     <!-- Prev -->
                     <div class="swiper-button-prev-8  block left-0 after:hidden before:hidden focus:outline-none">
-                        <img width="22" src="./img/prev.svg" alt="" />
+                        <img width="22" src="./img/img/prev.svg" alt="" />
                     </div>
                 </div>
 
@@ -471,11 +472,11 @@
                     <!-- Next -->
                     <div
                         class="swiper-button-next-9 absolute right-0 after:hidden before:hidden block focus:outline-none">
-                        <img width="22" src="./img/next.svg" alt="" />
+                        <img width="22" src="./img/img/next.svg" alt="" />
                     </div>
                     <!-- Prev -->
                     <div class="swiper-button-prev-9  block left-0 after:hidden before:hidden focus:outline-none">
-                        <img width="22" src="./img/prev.svg" alt="" />
+                        <img width="22" src="./img/img/prev.svg" alt="" />
                     </div>
                 </div>
 
@@ -517,11 +518,11 @@
                     <!-- Next -->
                     <div
                         class="swiper-button-next-10 absolute right-0 after:hidden before:hidden block focus:outline-none">
-                        <img width="22" src="./img/next.svg" alt="" />
+                        <img width="22" src="./img/img/next.svg" alt="" />
                     </div>
                     <!-- Prev -->
                     <div class="swiper-button-prev-10  block left-0 after:hidden before:hidden focus:outline-none">
-                        <img width="22" src="./img/prev.svg" alt="" />
+                        <img width="22" src="./img/img/prev.svg" alt="" />
                     </div>
                 </div>
 
@@ -562,7 +563,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <script type="module" src="js/app.js"></script>
 </body>
 
 </html>
