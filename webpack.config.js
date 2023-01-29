@@ -83,5 +83,15 @@ module.exports = {
                 ]
               }
         ]
-    }
+    },
+    devServer: {
+        static: {
+            directory: path.resolve(__dirname, 'public')
+        },
+        port: 3000,
+        open: true,
+        hot: true,
+        compress: true,
+        historyApiFallback: true
+      },
 }
