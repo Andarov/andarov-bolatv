@@ -122,81 +122,67 @@ if(uzbSongMob){
   displayVideos(engSongMob, bolatv.songs[1])
 }
 
+const parseMediaURL = (media) => {
+  const regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
+  const url = media.src;
+  const match = url.match(regexp);
+  return match ? match[1] : match;
+};
+
+const createIframe = (id) => {
+  const iframe = document.createElement("iframe");
+  iframe.setAttribute("allowfullscreen", "");
+  iframe.setAttribute("allow", "autoplay");
+  iframe.setAttribute("src", `https://www.youtube.com/embed/${id}?playlist=${id}&loop=1&autoplay=1`);
+  iframe.classList.add("w-full", "h-full");
+  return iframe;
+};
+
+// Iframe yaratish
 let videos;
-// Iframe
-function findVideos() {
+
+const findVideos = () => {
   videos = document.querySelectorAll("#video");
-  
-  for (let i = 0; i < videos.length; i++) {
-    setupVideo(videos[i]);
-  }
-}
+  videos.forEach(setupVideo);
+};
 
 const modalWrapper = document.querySelector("#modal-wrapper");
 const modal = document.querySelector("#modal");
 const exitBtn = document.querySelector("#exit-btn");
 
-function setupVideo(video) {
-  let link = video.querySelector("#video-link");
-  let media = video.querySelector("#video-img");
-  let button = video.querySelector("#video-btn");
-  
-  let id = parseMediaURL(media);
+const setupVideo = (video) => {
+  const link = video.querySelector("#video-link");
+  const media = video.querySelector("#video-img");
+  const id = parseMediaURL(media);
   let iframe;
+
   video.addEventListener("click", () => {
     modalWrapper.classList.remove("hidden");
     modal.classList.remove("hidden");
-    
+
     iframe = createIframe(id);
-    
+
     modal.prepend(iframe);
   });
-  
+
   link.removeAttribute("href");
   video.classList.add("video--enabled");
-  
-  const addHidden = function () {
+
+  const addHidden = () => {
     modalWrapper.classList.add("hidden");
     modal.classList.add("hidden");
     iframe.remove();
   };
-  
+
   exitBtn.addEventListener("click", addHidden);
   modalWrapper.addEventListener("click", addHidden);
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") {
-      addHidden();
-    }
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") addHidden();
   });
-}
+};
 
-function parseMediaURL(media) {
-  let regexp =
-  /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
-  let url = media.src;
-  let match = url.match(regexp);
-  
-  return match ? match[1] : match;
-}
-
-function createIframe(id) {
-  let iframe = document.createElement("iframe");
-  
-  iframe.setAttribute("allowfullscreen", "");
-  iframe.setAttribute("allow", "autoplay");
-  iframe.setAttribute("src", generateURL(id));
-  iframe.classList.add("w-full");
-  iframe.classList.add("h-full");
-  
-  return iframe;
-}
-
-function generateURL(id) {
-  let query = "?rel=0&showinfo=0&autoplay=1";
-  
-  return "https://www.youtube.com/embed/" + id + query;
-}
 findVideos();
+
 
 // Nomi bilan qidiruv
 const elForm = document.querySelector("#form");
