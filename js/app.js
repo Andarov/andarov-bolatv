@@ -122,6 +122,7 @@ if(uzbSongMob){
   displayVideos(engSongMob, bolatv.songs[1])
 }
 
+// Iframe yaratish
 const parseMediaURL = (media) => {
   const regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
   const url = media.src;
@@ -138,9 +139,8 @@ const createIframe = (id) => {
   return iframe;
 };
 
-// Iframe yaratish
 let videos;
-
+// Videolar boasilganda iframe setup qilish
 const findVideos = () => {
   videos = document.querySelectorAll("#video");
   videos.forEach(setupVideo);
@@ -168,6 +168,7 @@ const setupVideo = (video) => {
   link.removeAttribute("href");
   video.classList.add("video--enabled");
 
+  // Modal ochib yopish
   const addHidden = () => {
     modalWrapper.classList.add("hidden");
     modal.classList.add("hidden");
@@ -180,7 +181,6 @@ const setupVideo = (video) => {
     if (e.key === "Escape") addHidden();
   });
 };
-
 findVideos();
 
 
