@@ -15,6 +15,41 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
+
+function add_video(url,element) {
+  var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+        var videoID = url;
+    
+        var playerDiv = document.createElement('div');
+        playerDiv.id = 'player';
+        element.appendChild(playerDiv);
+    
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                videoId: videoID,
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+    
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.ENDED) {
+                event.target.seekTo(0);
+                event.target.playVideo();
+            }
+        }
+}
+
+
 scrollFunction()
 window.onscroll = function () {
   scrollFunction();
@@ -142,7 +177,7 @@ const createIframe = (id) => {
 let videos;
 // Videolar boasilganda iframe setup qilish
 const findVideos = () => {
-  videos = document.querySelectorAll("#video");
+  videos = document.querySelectorAll(".videobek");
   videos.forEach(setupVideo);
 };
 
@@ -154,13 +189,15 @@ const setupVideo = (video) => {
   const link = video.querySelector("#video-link");
   const media = video.querySelector("#video-img");
   const id = parseMediaURL(media);
+
+  
   let iframe;
 
   video.addEventListener("click", () => {
     modalWrapper.classList.remove("hidden");
     modal.classList.remove("hidden");
-
     iframe = createIframe(id);
+    add_video(id,iframe)
 
     modal.prepend(iframe);
   });
