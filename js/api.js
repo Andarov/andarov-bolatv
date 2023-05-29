@@ -938,5 +938,4 @@ export const bolatv = {
             },
         ]
     ]
-
 }
