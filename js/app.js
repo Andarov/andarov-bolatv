@@ -134,17 +134,22 @@ function add_video(url, element) {
 
   let player;
 
-  // onYouTubeIframeAPIReady funksiyasini o'zgartiring
-  window.onYouTubeIframeAPIReady = function() {
+  window.onYouTubeIframeAPIReady = function () {
     player = new YT.Player("player", {
       height: "390",
       width: "640",
       videoId: videoID,
+      playerVars: {
+        autoplay: 1, 
+        loop: 1, 
+        playlist: videoID,
+      },
       events: {
         onStateChange: onPlayerStateChange,
       },
     });
-  }
+  };
+  
 
   function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.ENDED) {
@@ -176,6 +181,7 @@ const createIframe = (id) => {
 };
 
 let videos;
+
 // Videolar boasilganda iframe setup qilish
 const findVideos = () => {
   videos = document.querySelectorAll(".videobek");
