@@ -121,18 +121,18 @@ if (uzbSongMob) {
 }
 
 function add_video(url, element) {
-  var tag = document.createElement("script");
+  let tag = document.createElement("script");
   tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName("script")[0];
+  let firstScriptTag = document.getElementsByTagName("script")[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-  var videoID = url;
+  let videoID = url;
 
-  var playerDiv = document.createElement("div");
+  let playerDiv = document.createElement("div");
   playerDiv.id = "player";
   element.appendChild(playerDiv);
 
-  var player;
+  let player;
 
   // onYouTubeIframeAPIReady funksiyasini o'zgartiring
   window.onYouTubeIframeAPIReady = function() {
