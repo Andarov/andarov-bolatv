@@ -333,69 +333,6 @@ export const bolatv = {
                 lang: 'uz'
             }
         ],
-        // Mittivoylar
-        [
-            {
-                title: "1-qism",
-                url: "https://www.youtube.com/watch?v=5Y-NzcLuRIQ",
-                thumbnail: "https://i.ytimg.com/vi/aMOtdbsK0pI/maxresdefault.jpg",
-                lang: 'uz'
-            },
-            {
-                title: "2-qism",
-                url: "https://www.youtube.com/watch?v=VC8siB9yIY0",
-                thumbnail: "https://i.ytimg.com/vi/bMba4uNgXX4/maxresdefault.jpg",
-                lang: 'uz'
-            },
-            {
-                title: "3-qism",
-                url: "https://www.youtube.com/watch?v=YdxthkTuk34&t=442s",
-                thumbnail: "https://i.ytimg.com/vi/oVakxAA5hS0/maxresdefault.jpg",
-                lang: 'uz'
-            },
-            {
-                title: "4-qism",
-                url: "https://www.youtube.com/watch?v=JEVamRWF3M0",
-                thumbnail: "https://i.ytimg.com/vi/7pNSJ6HE6_g/maxresdefault.jpg",
-                lang: 'uz'
-            },
-            {
-                title: "5-qism",
-                url: "https://www.youtube.com/watch?v=ZzTVqGW9mEU",
-                thumbnail: "https://i.ytimg.com/vi/OyehnHOfIsw/maxresdefault.jpg",
-                lang: 'uz'
-            },
-            {
-                title: "6-qism",
-                url: "https://www.youtube.com/watch?v=ZEkVJM9p1Vo&t=1s",
-                thumbnail: "https://i.ytimg.com/vi/ppqVjkbEyOo/maxresdefault.jpg",
-                lang: 'uz'
-            },
-            {
-                title: "7-qism",
-                url: "https://www.youtube.com/watch?v=XCD2taX-7Tg",
-                thumbnail: "https://i.ytimg.com/vi/5gei-Sppcl0/maxresdefault.jpg",
-                lang: 'uz'
-            },
-            {
-                title: "8-qism",
-                url: "https://www.youtube.com/watch?v=SXpJPiw9TTI",
-                thumbnail: "https://i.ytimg.com/vi/Eb8HYYN7rkE/maxresdefault.jpg",
-                lang: 'uz'
-            },
-            {
-                title: "9-qism",
-                url: "https://www.youtube.com/watch?v=_5Xboq-THKk",
-                thumbnail: "https://i.ytimg.com/vi/bB5ZKPlA6oE/maxresdefault.jpg",
-                lang: 'uz'
-            },
-            {
-                title: "10-qism",
-                url: "https://www.youtube.com/watch?v=8SDxybYzqW8",
-                thumbnail: "https://i.ytimg.com/vi/pS9bdspGLh0/maxresdefault.jpg",
-                lang: 'uz'
-            },
-        ],
         // Nussa
         [
             {

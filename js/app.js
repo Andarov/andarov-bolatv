@@ -45,10 +45,9 @@ if ((pomidor, avto, panda, qunduz, mittivoylar, nussa, masha, multic)) {
   displayVideos(avto, bolatv.cartoon[1]);
   displayVideos(panda, bolatv.cartoon[2]);
   displayVideos(qunduz, bolatv.cartoon[3]);
-  displayVideos(mittivoylar, bolatv.cartoon[4]);
-  displayVideos(nussa, bolatv.cartoon[5]);
-  displayVideos(masha, bolatv.cartoon[6]);
-  displayVideos(multic, bolatv.cartoon[7]);
+  displayVideos(nussa, bolatv.cartoon[4]);
+  displayVideos(masha, bolatv.cartoon[5]);
+  displayVideos(multic, bolatv.cartoon[6]);
 }
 
 // Display songs videos
@@ -97,7 +96,6 @@ const pomidorMob = document.querySelector("#pomidor-mob");
 const avtoMob = document.querySelector("#avto-mob");
 const pandaMob = document.querySelector("#panda-mob");
 const qunduzMob = document.querySelector("#qunduz-mob");
-const mittiMob = document.querySelector("#mitti-mob");
 const nussaMob = document.querySelector("#nussa-mob");
 const mashaMob = document.querySelector("#masha-mob");
 const multicMob = document.querySelector("#multic-mob");
@@ -106,10 +104,9 @@ if ((pomidorMob, avtoMob, pandaMob, qunduzMob, nussaMob, mashaMob, multicMob)) {
   displayVideos(avtoMob, bolatv.cartoon[1]);
   displayVideos(pandaMob, bolatv.cartoon[2]);
   displayVideos(qunduzMob, bolatv.cartoon[3]);
-  displayVideos(mittiMob, bolatv.cartoon[4]);
-  displayVideos(nussaMob, bolatv.cartoon[5]);
-  displayVideos(mashaMob, bolatv.cartoon[6]);
-  displayVideos(multicMob, bolatv.cartoon[7]);
+  displayVideos(nussaMob, bolatv.cartoon[4]);
+  displayVideos(mashaMob, bolatv.cartoon[5]);
+  displayVideos(multicMob, bolatv.cartoon[6]);
 }
 
 // Display songs videos
@@ -345,16 +342,6 @@ const qunduzSlider = new Swiper(".qunduz-mob", {
   navigation: {
     nextEl: ".swiper-button-next-6",
     prevEl: ".swiper-button-prev-6",
-  },
-});
-
-const mittiSlider = new Swiper(".mitti-mob", {
-  grabCursor: true,
-  slidesPerView: 1.2,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next-7",
-    prevEl: ".swiper-button-prev-7",
   },
 });
 
