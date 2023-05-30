@@ -137,7 +137,6 @@ function add_video(url, element) {
       width: "640",
       videoId: videoID,
       playerVars: {
-        autoplay: 1, 
         loop: 1, 
         playlist: videoID,
       },
@@ -171,7 +170,7 @@ const createIframe = (id) => {
   iframe.setAttribute("allow", "autoplay");
   iframe.setAttribute(
     "src",
-    `https://www.youtube.com/embed/${id}?playlist=${id}&loop=1&autoplay=1`
+    `https://www.youtube.com/embed/${id}?playlist=${id}&loop=1`
   );
   iframe.classList.add("w-full", "h-full");
   return iframe;
@@ -199,9 +198,20 @@ const setupVideo = (video) => {
   video.addEventListener("click", () => {
     modalWrapper.classList.remove("hidden");
     modal.classList.remove("hidden");
+    if (!iframe) {
+      iframe = createIframe(id);
+      add_video(id, iframe);
+      modal.prepend(iframe);
+      iframe.style.display = 'none'
+    }
+    modal.parentNode.removeChild(iframe)
+  });
+  
+  video.addEventListener("click", () => {
+    modalWrapper.classList.remove("hidden");
+    modal.classList.remove("hidden");
     iframe = createIframe(id);
     add_video(id, iframe);
-
     modal.prepend(iframe);
   });
 
